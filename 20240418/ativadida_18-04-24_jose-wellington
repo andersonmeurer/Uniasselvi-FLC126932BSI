@@ -1,0 +1,34 @@
+Algoritmo "maisVelho"
+// 
+//  
+// Descrição   : Verificar quem tem a maior idade
+// Autor(a)    : wellington
+// Data atual  : 18/04/2024
+Var
+// Seção de Declarações das variáveis 
+   nomes : vetor[1..2] de caracter
+   idade : vetor[1..2] de inteiro
+   cont : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   para cont de 1 ate 2 faca
+        escreval("Digite o ",cont,"° nome")
+        leia(nomes[cont])
+        escreval("Digite a idade da ",cont,"° pessoa")
+        leia(idade[cont])
+   fimpara
+   
+   se idade [1] > idade[2] entao
+      escreval(nomes[1] ," com " , idade[1] , " anos é mais velho(a) que ",nomes[2])
+   senao
+      se idade[2] > idade[1] entao
+          escreval(nomes[2] ," com " , idade[2] , " anos é mais velho(a) que ",nomes[1])
+      senao
+          escreval(nomes[1] , " e " ,nomes[2], " tem idades iguais")
+      fimse
+   fimse
+   
+
+
+Fimalgoritmo
