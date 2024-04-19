@@ -1,3 +1,4 @@
+//Esta rodando
 Algoritmo "comparaIdade"
 Var
    nomes : vetor[1..2] de caracter
@@ -14,8 +15,8 @@ Inicio
    leia(idades[2])
    
    se idades[1] > idades[2] entao
-      escreval("O aluno mais velho é: " + nomes[1] + " com idade: " + idades[1])
+      escreval("O aluno mais velho Ã©: " + nomes[1] + " com idade: " + idades[1])
    senao
-      escreval("O aluno mais velho é: ", nomes[2], ", com idade: ", idades[2])
+      escreval("O aluno mais velho Ã©: ", nomes[2], ", com idade: ", idades[2])
    fimse
 Fimalgoritmo
