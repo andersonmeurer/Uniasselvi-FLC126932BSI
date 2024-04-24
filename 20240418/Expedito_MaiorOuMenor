@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Expedito_MaiorOuMenor {
+    public static void main(String[] args) {
+        Scanner escrever = new Scanner(System.in);
+        String[] nome = new String[2];
+        int[] idade = new int[2];
+
+        for (int cont = 0; cont < 2; cont++) {
+            System.out.println("Digite o seu nome: " + (cont + 1));
+            nome[cont] = escrever.nextLine();
+            System.out.println("Digite a sua idade: " + (cont + 1));
+            idade[cont] = Integer.parseInt(escrever.nextLine());
+        }
+
+        if (idade[1] < idade[0]) {
+            System.out.printf("%s é mais velhos", nome[0]);
+        } else if (idade[1] > idade[0]) {
+            System.out.printf("%s é mais velho", nome[1]);
+        } else {
+            System.out.printf("%s e %s têm idades iguais", nome[0], nome[1]);
+        }
+        escrever.close();
+    }
+}
+
+// FRANCISCO EXPEDITO NASCIMENTO DE PAULO
+
