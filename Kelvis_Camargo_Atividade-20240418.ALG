@@ -1,0 +1,28 @@
+Algoritmo "LerNomesEIdadesComparandoAsIdades"
+//  
+//  
+
+Var
+   nomes : vetor[0..2] de caracter
+        idades : vetor[0..2] de inteiro
+        
+Inicio
+
+   escreva("Digite o nome da primera pessoa:")
+   leia(nomes[0])
+   escreva("Digite a idade da primeira pessoa:")
+   leia(idades[0])
+   
+   escreva("Digite o nome da segunda pessoa:")
+   leia(nomes[1])
+   escreva("Escreva a idade da segunda pessoa:")
+   leia(idades[1])
+   
+   
+   se idades[0] > idades[1] entao
+        escreval(nomes[0], " tem ", idades[0], " anos e é mais velha que ", nomes[1])
+   senao
+        escreval(nomes[1], " tem ", idades[1], " anos e é mais velha que ", nomes[0])
+   fimse
+
+Fimalgoritmo
