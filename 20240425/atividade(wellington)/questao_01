@@ -1,0 +1,24 @@
+Algoritmo "Questão_01"
+// 
+//  
+// Descrição   : vetor de 5 números
+// Autor(a)    : José Wellington L. V.
+// Data atual  : 2/5/2024
+Var
+// Seção de Declarações das variáveis 
+   numeros : vetor[1..5]de inteiro
+   i : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   para i de 1 ate 5 faca
+        numeros[i] <- i * 2
+   fimpara
+   
+// Imprime os valores do vetor
+   para i de 1 ate 5 faca
+        escreva(numeros[i] , " ")
+   fimpara
+ 
+
+Fimalgoritmo
