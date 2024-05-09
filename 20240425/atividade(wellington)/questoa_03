@@ -1,0 +1,49 @@
+Algoritmo "Questao_03"
+// 
+//  
+// Descrição   : Verificar Algoritmo
+// Autor(a)    : José Wellington L.V.
+// Data atual  : 2/5/2024
+Var
+// Seção de Declarações das variáveis 
+   i: Inteiro
+   j: Inteiro
+   mat: vetor[1..20, 1..20] de caractere
+   expl: logico
+   exp2: logico
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   para i de 1 ate 20 faca
+        para j de 1 ate 20 faca
+             mat[i, j] <- " "
+        fimpara
+   fimpara
+//; Preenche diagonais e centro
+    para i de 1 ate 20 faca
+         mat[i, i] <- "x"
+         mat[i, 21-i] <- "x"
+         expl <- i <= 11
+         exp2 <- i >= 10
+         se expl e exp2 entao
+            para j de 10 ate 11 faca
+              mat[i, j] <- "x"
+            fimpara
+         fimse
+         expl <- i = 11
+         exp2 <- i <= 12
+         se expl e exp2 entao
+            para j de 10 ate 11 faca
+                 mat[j, i] <- "x"
+            fimpara
+         fimse
+    fimpara
+
+    para i de 1 ate 20 faca
+         para j de 1 ate 20 faca
+              escreva(mat[i, j])
+         fimpara
+         escreval ("")
+         fimpara
+
+fimalgoritmo
