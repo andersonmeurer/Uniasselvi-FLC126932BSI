@@ -1,0 +1,26 @@
+algoritmo "media_notas"
+var
+   notas: vetor [1..10] de real
+   i: inteiro
+   soma, media: real
+inicio
+   soma <- 0
+   para i de 1 ate 10 faca
+      escreva("Digite a nota ", i, ": ")
+      leia(notas[i])
+      soma <- soma + notas[i]
+   fimpara
+   media <- soma / 10
+   escreva("A média das notas é: ", media, "\n")
+   se media >= 0 e media <= 3 entao
+      escreva("Reprovado!")
+   senao
+      se media >= 4 e media <= 6 entao
+         escreva("Em Exame!")
+      senao
+         se media >= 7 e media <= 10 entao
+            escreva("Aprovado!")
+         fimse
+      fimse
+   fimse
+fimalgoritmo
