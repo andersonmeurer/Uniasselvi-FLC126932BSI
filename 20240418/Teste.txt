@@ -1,0 +1,25 @@
+Algoritmo "semnome"
+
+Var
+
+    nome : caractere
+    idade : inteiro
+    altura : real
+
+Inicio
+
+      escreval("Por favor, informe o seu nome: ")
+      leia(nome)
+      escreval("Por favor, informe a sua idade: ")
+      leia(idade)
+      escreval("Por favor, informe a sua altura: ")
+      leia(altura)
+      
+      
+      escreval("Nome: ", nome)
+      escreval("Idade: ", idade)
+      escreval("Altura: ", Altura)
+
+
+
+Fimalgoritmo
